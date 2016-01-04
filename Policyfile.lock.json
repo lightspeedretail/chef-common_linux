@@ -1,5 +1,5 @@
 {
-  "revision_id": "1cb159eb74b7d3cc19a1ccd215a12fc0185859c49ca42a2939ec0166b6287675",
+  "revision_id": "93dd44f3a43b60205765bc3f49e65648fa3d51b2278ec53064efd75bd0fb2689",
   "name": "common_linux",
   "run_list": [
     "recipe[common_linux::default]"
@@ -7,18 +7,19 @@
   "cookbook_locks": {
     "common_linux": {
       "version": "0.1.0",
-      "identifier": "fbeafa9470bc6db483add6260b50893bf6075ab6",
-      "dotted_decimal_identifier": "70908581107514477.50810278453316432.150890623752886",
+      "identifier": "4d40214b343d2b98e33dad5acf7aba6b759ecc84",
+      "dotted_decimal_identifier": "21744084946533675.43034050500939642.204970697608324",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
-        "remote": null,
-        "revision": "49dafff75144a19473a9e7927fa3f218ed8c7ea7",
+        "remote": "git@github.com:JonathanSerafini/chef-common_linux.git",
+        "revision": "943a36b370f2a545505aa478ce165e8a8f8039d7",
         "working_tree_clean": false,
-        "published": false,
+        "published": true,
         "synchronized_remote_branches": [
-
+          "origin/develop",
+          "origin/master"
         ]
       },
       "source_options": {
@@ -54,6 +55,28 @@
       "source_options": {
         "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-client/versions/4.3.2/download",
         "version": "4.3.2"
+      }
+    },
+    "apt": {
+      "version": "2.9.2",
+      "identifier": "aa7652cc9ec61ee4603d984cb5770169987ae0ea",
+      "dotted_decimal_identifier": "47980844033164830.64282112354465143.1553041383658",
+      "cache_key": "apt-2.9.2-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/apt/versions/2.9.2/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/apt/versions/2.9.2/download",
+        "version": "2.9.2"
+      }
+    },
+    "ubuntu": {
+      "version": "1.2.0",
+      "identifier": "e72ec65a3a9cd7390e8a9b7f39ca302903c3fad7",
+      "dotted_decimal_identifier": "65072149072354519.16060062149589450.52952714967767",
+      "cache_key": "ubuntu-1.2.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ubuntu/versions/1.2.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ubuntu/versions/1.2.0/download",
+        "version": "1.2.0"
       }
     },
     "ohai": {
@@ -144,17 +167,6 @@
         "version": "2.0.1"
       }
     },
-    "apt": {
-      "version": "2.9.2",
-      "identifier": "aa7652cc9ec61ee4603d984cb5770169987ae0ea",
-      "dotted_decimal_identifier": "47980844033164830.64282112354465143.1553041383658",
-      "cache_key": "apt-2.9.2-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/apt/versions/2.9.2/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/apt/versions/2.9.2/download",
-        "version": "2.9.2"
-      }
-    },
     "compat_resource": {
       "version": "12.5.26",
       "identifier": "8021e2e0cc7ff57ad03b57df5e0ea61b7cbccfa2",
@@ -241,6 +253,14 @@
         "= 4.3.2"
       ],
       [
+        "apt",
+        "= 2.9.2"
+      ],
+      [
+        "ubuntu",
+        "= 1.2.0"
+      ],
+      [
         "ohai",
         "= 2.0.4"
       ],
@@ -273,10 +293,6 @@
         "= 2.0.1"
       ],
       [
-        "apt",
-        "= 2.9.2"
-      ],
-      [
         "compat_resource",
         "= 12.5.26"
       ],
@@ -297,6 +313,14 @@
       "common_linux (0.1.0)": [
         [
           "chef-client",
+          ">= 0.0.0"
+        ],
+        [
+          "apt",
+          ">= 0.0.0"
+        ],
+        [
+          "ubuntu",
           ">= 0.0.0"
         ],
         [
@@ -356,6 +380,15 @@
           "~> 1.37"
         ]
       ],
+      "apt (2.9.2)": [
+
+      ],
+      "ubuntu (1.2.0)": [
+        [
+          "apt",
+          ">= 0.0.0"
+        ]
+      ],
       "ohai (2.0.4)": [
 
       ],
@@ -388,9 +421,6 @@
           "compat_resource",
           ">= 0.0.0"
         ]
-      ],
-      "apt (2.9.2)": [
-
       ],
       "compat_resource (12.5.26)": [
 
