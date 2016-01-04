@@ -7,6 +7,8 @@ long_description 'Installs/Configures chef_common_linux'
 version '0.1.0'
 
 depends 'chef-client'
+depends 'apt'
+depends 'ubuntu'
 depends 'ohai'
 depends 'build-essential'
 depends 'cron'
