@@ -2,7 +2,7 @@
 include_recipe "iptables::default"
 
 node[:common][:iptables].each do |name, hash|
-  iptables name do
+  iptables_rule name do
     variables hash
   end
 end
