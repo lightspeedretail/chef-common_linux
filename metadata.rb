@@ -6,8 +6,6 @@ description 'Installs/Configures chef_common_linux'
 long_description 'Installs/Configures chef_common_linux'
 version '0.1.0'
 
-depends 'common_utils'
-
 depends 'chef-client'
 depends 'ohai'
 depends 'build-essential'
