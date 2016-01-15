@@ -20,7 +20,6 @@ action :set do
 
   file "/etc/hostname" do
     content "#{host_name}.#{domain_name}".downcase
-    notifies :reload,   "ohai[reload-hostname]", :immediately
     notifies :restart,  "service[hostname]", :immediately
   end
 
@@ -31,6 +30,7 @@ action :set do
 
   service "hostname" do
     action :nothing
+    notifies :reload,   "ohai[reload-hostname]", :immediately
   end
 end
 

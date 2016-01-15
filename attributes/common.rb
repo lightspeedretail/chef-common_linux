@@ -1,6 +1,6 @@
 
 default[:common].tap do |config|
-  config[:linux][:timezone]   = "UTC"
+  config[:linux][:timezone]   = "Etc/UTC"
   config[:linux][:hostname]   = node.name
   config[:linux][:domainname] = "localdomain"
 
