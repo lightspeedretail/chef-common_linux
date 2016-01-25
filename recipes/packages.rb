@@ -52,7 +52,8 @@ node[:common][:chef_gems].each do |name, hash|
           else hash.respond_to?(:to_hash) ? hash.to_hash : hash
           end
 
-  r = chef_gem(name)
-  r.load_properties(hash)
+  chef_gem name do
+    load_properties hash
+  end
 end
 
