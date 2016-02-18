@@ -5,7 +5,7 @@ include_recipe "build-essential::default"
 
 # Install packages from attributes
 #
-node[:common][:packages].each do |name, hash|
+node[:common_linux][:packages].each do |name, hash|
   hash =  case hash
           when true then { "action" => "install" }
           when false then { "action" => "remove" }
@@ -25,7 +25,7 @@ end
 
 # Install gems from attributes
 #
-node[:common][:gems].each do |name, hash|
+node[:common_linux][:gems].each do |name, hash|
   hash =  case hash
           when true then { "action" => "install" }
           when false then { "action" => "remove" }
@@ -45,7 +45,7 @@ end
 
 # Install chef_gems from attributes
 #
-node[:common][:chef_gems].each do |name, hash|
+node[:common_linux][:chef_gems].each do |name, hash|
   hash =  case hash
           when true then { "action" => "install" }
           when false then { "action" => "remove" }
