@@ -11,7 +11,4 @@ platforms:
 suites:
   - name: default
     attributes:
-      common:
-        environment:
-          name: "test"
 

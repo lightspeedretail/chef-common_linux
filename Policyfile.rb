@@ -1,11 +1,7 @@
 name "common_linux"
+run_list "common_linux::default"
 
 default_source :supermarket
-#default_source :chef_server
-
-run_list(
-  "common_linux::default"
-)
 
 # Attributes
 #
