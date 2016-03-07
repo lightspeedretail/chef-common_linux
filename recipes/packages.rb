@@ -15,7 +15,7 @@ node[:common_linux][:packages].each do |name, hash|
   compile_time = hash.delete("compile_time")
 
   r = package name
-  r.load_properties(hash)
+  r.common_properties(hash)
 
   if compile_time
     r.action :nothing
@@ -35,7 +35,7 @@ node[:common_linux][:gems].each do |name, hash|
   compile_time = hash.delete("compile_time")
 
   r = gem_package(name)
-  r.load_properties(hash)
+  r.common_properties(hash)
 
   if compile_time
     r.action :nothing
@@ -53,7 +53,7 @@ node[:common_linux][:chef_gems].each do |name, hash|
           end
 
   chef_gem name do
-    load_properties hash
+    common_properties hash
   end
 end
 

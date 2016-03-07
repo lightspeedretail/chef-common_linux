@@ -8,7 +8,7 @@ include_recipe "ubuntu::default"
 #
 node[:common_linux][:repositories].each do |name, hash|
 	apt_repository name do
-    load_properties hash
+    common_properties hash
   end
 end
 
