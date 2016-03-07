@@ -3,7 +3,7 @@ resource_name :timezone
 
 property :timezone,
   kind_of: String,
-  default: lazy { |r| r.node[:common][:timezone] || "Etc/UTC" },
+  default: lazy { |r| r.node[:common_linux][:timezone] || "Etc/UTC" },
   required: true
 
 action :set do

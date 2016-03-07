@@ -4,12 +4,12 @@ resource_name :hostname
 property :host_name,
   kind_of: String,
   identity: true,
-  default: lazy { |r| node[:common][:linux][:hostname] }
+  default: lazy { |r| node[:common_linux][:hostname] }
 
 property :domain_name,
   kind_of: String,
   identity: true,
-  default: lazy { |r| node[:common][:linux][:domainname] }
+  default: lazy { |r| node[:common_linux][:domainname] }
 
 action :set do
   hostsfile_entry node[:ipaddress] do
