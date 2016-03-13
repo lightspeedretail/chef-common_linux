@@ -1,14 +1,14 @@
 # common_linux cookbook
 
-This cookbook provides basic low level configuration for Linux systems, for instance configuring hostnames, ntp, syslog and chef-client. For those most part, functionality will be added here by including third party cookbooks.
+A cookbook whicb provides basic low level configuration for Linux systems, for instance configuring hostnames, ntp, syslog and chef-client. For those most part, functionality will be added here by including third party cookbooks.
 
 # Requirements
 
-This cookbook requires *Chef 12.5.0* or later.
+This cookbook requires *Chef 12.7.0* or later.
 
 # Platform
 
-Ubuntu / AWS
+Ubuntu
 
 # Included cookbooks
 
@@ -23,15 +23,15 @@ Ubuntu / AWS
 
 # Attributes
 
-##### common.repositories
+### common.repositories
 
 Hash of repositories used to create `apt_repository` resources. This could always be extended to support `yum_repository` resources at a alter time as well.
 
-##### common.packages | common.gems | common.chef_gems
+### common.packages | common.gems | common.chef_gems
 
 Hashes enabling you to define `package`, `gem` and `chef_gem` packages that should be installed during the chef run. 
 
-##### common.iptables
+### common.iptables
 
 Hashes enabling you to define `iptables` lwrp definitions.
 
