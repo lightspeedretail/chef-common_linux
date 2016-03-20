@@ -1,5 +1,5 @@
 
-resource_name :hostname
+resource_name :common_hostname
 
 property :host_name,
   kind_of: String,
@@ -10,6 +10,16 @@ property :domain_name,
   kind_of: String,
   identity: true,
   default: lazy { |r| node[:common_linux][:domainname] }
+
+# Ensure that the resource is applied regardless of whether we are in why_run
+# or standard mode.
+#
+# Refer to chef/chef#4537 for this uncommon syntax
+action_class do
+  def whyrun_supported?
+    true
+  end
+end
 
 action :set do
   hostsfile_entry node[:ipaddress] do
