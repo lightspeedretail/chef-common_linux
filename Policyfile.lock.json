@@ -1,24 +1,24 @@
 {
-  "revision_id": "1115b09c48a355f4a76892982d7b41fbad67274e0f9b26ae47e6eb88c58d830f",
+  "revision_id": "d006df056a63cd8b124adf05cd0c1a6f36560faed27db8a66a9840f82de6eb88",
   "name": "common_linux",
   "run_list": [
     "recipe[common_linux::default]"
   ],
   "cookbook_locks": {
     "common_linux": {
-      "version": "0.2.0",
-      "identifier": "218258fb9724bafa51c7752fb2b982a878e28f8f",
-      "dotted_decimal_identifier": "9431992921171130.70458661284065977.143660094230415",
+      "version": "0.2.1",
+      "identifier": "92ed0c89fadf810a739990a82188ca7d6df90c27",
+      "dotted_decimal_identifier": "41355984710066049.2941853161234824.222640064760871",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "git@github.com:JonathanSerafini/chef-common_linux.git",
-        "revision": "0ceb3f9d58978bac75729a15e3e84dcc3273b521",
+        "revision": "65a56d332de68b86bfa4957228bde9c46f2f2d99",
         "working_tree_clean": false,
-        "published": true,
+        "published": false,
         "synchronized_remote_branches": [
-          "origin/develop"
+
         ]
       },
       "source_options": {
@@ -27,14 +27,14 @@
     },
     "rsyslog_ng": {
       "version": "2.0.1",
-      "identifier": "35f5967203a8f4bedecdbddf5a0bd649a2c58b5e",
-      "dotted_decimal_identifier": "15188200272406772.53725220810217995.235611751811934",
+      "identifier": "954dfac6bdbae04105f6a2f0d1123639b2b4d5c9",
+      "dotted_decimal_identifier": "42025511001373408.18302430339977490.59621439231433",
       "source": "../rsyslog_ng",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": null,
-        "revision": "da8cae50b4f7337470fecce2fc4bd2e12970a4dc",
+        "revision": "228a7f4562502743a49d17d115cb4f7f6721e37a",
         "working_tree_clean": true,
         "published": false,
         "synchronized_remote_branches": [
@@ -79,14 +79,14 @@
       }
     },
     "ohai": {
-      "version": "2.1.0",
-      "identifier": "90c2e065e03759403d32422cc633eb98db47213b",
-      "dotted_decimal_identifier": "40746665683990361.18081684577371699.259041746428219",
-      "cache_key": "ohai-2.1.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ohai/versions/2.1.0/download",
+      "version": "3.0.1",
+      "identifier": "2ea17677ea1950cb87deab5dd1fa107c58afcf99",
+      "dotted_decimal_identifier": "13125379118733648.57288810699805178.18126249906073",
+      "cache_key": "ohai-3.0.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ohai/versions/3.0.1/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ohai/versions/2.1.0/download",
-        "version": "2.1.0"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ohai/versions/3.0.1/download",
+        "version": "3.0.1"
       }
     },
     "build-essential": {
@@ -261,7 +261,7 @@
       ],
       [
         "ohai",
-        "= 2.1.0"
+        "= 3.0.1"
       ],
       [
         "build-essential",
@@ -309,6 +309,56 @@
       ]
     ],
     "dependencies": {
+      "common_linux (0.2.1)": [
+        [
+          "chef-client",
+          ">= 0.0.0"
+        ],
+        [
+          "apt",
+          ">= 0.0.0"
+        ],
+        [
+          "ubuntu",
+          ">= 0.0.0"
+        ],
+        [
+          "ohai",
+          ">= 0.0.0"
+        ],
+        [
+          "build-essential",
+          ">= 0.0.0"
+        ],
+        [
+          "cron",
+          ">= 0.0.0"
+        ],
+        [
+          "hostsfile",
+          ">= 0.0.0"
+        ],
+        [
+          "ntp",
+          ">= 0.0.0"
+        ],
+        [
+          "sysctl",
+          ">= 0.0.0"
+        ],
+        [
+          "ulimit",
+          ">= 0.0.0"
+        ],
+        [
+          "iptables",
+          ">= 0.0.0"
+        ],
+        [
+          "rsyslog_ng",
+          ">= 0.0.0"
+        ]
+      ],
       "rsyslog_ng (2.0.1)": [
         [
           "apt",
@@ -338,7 +388,7 @@
           ">= 0.0.0"
         ]
       ],
-      "ohai (2.1.0)": [
+      "ohai (3.0.1)": [
 
       ],
       "build-essential (2.3.1)": [
@@ -388,56 +438,6 @@
       ],
       "chef_handler (1.3.0)": [
 
-      ],
-      "common_linux (0.2.0)": [
-        [
-          "chef-client",
-          ">= 0.0.0"
-        ],
-        [
-          "apt",
-          ">= 0.0.0"
-        ],
-        [
-          "ubuntu",
-          ">= 0.0.0"
-        ],
-        [
-          "ohai",
-          ">= 0.0.0"
-        ],
-        [
-          "build-essential",
-          ">= 0.0.0"
-        ],
-        [
-          "cron",
-          ">= 0.0.0"
-        ],
-        [
-          "hostsfile",
-          ">= 0.0.0"
-        ],
-        [
-          "ntp",
-          ">= 0.0.0"
-        ],
-        [
-          "sysctl",
-          ">= 0.0.0"
-        ],
-        [
-          "ulimit",
-          ">= 0.0.0"
-        ],
-        [
-          "iptables",
-          ">= 0.0.0"
-        ],
-        [
-          "rsyslog_ng",
-          ">= 0.0.0"
-        ]
       ]
     }
   }
