@@ -7,7 +7,7 @@ license 'apachev2'
 description 'Installs/Configures chef_common_linux'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 chef_version '>= 12.7'
-version '0.2.3'
+version '0.3.0'
 
 depends 'chef-client'
 depends 'apt'
