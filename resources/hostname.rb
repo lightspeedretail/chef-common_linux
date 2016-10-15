@@ -11,13 +11,21 @@ property :domain_name,
   identity: true,
   default: lazy { |r| node[:common_linux][:domainname] }
 
-# Ensure that the resource is applied regardless of whether we are in why_run
-# or standard mode.
-#
-# Refer to chef/chef#4537 for this uncommon syntax
+property :compile_time,
+  kind_of: [TrueClass,FalseClass],
+  identity: false,
+  default: true
+
 action_class do
   def whyrun_supported?
     true
+  end
+end
+
+def after_created
+  if compile_time
+    self.run_action(:set)
+    self.action :nothing
   end
 end
 

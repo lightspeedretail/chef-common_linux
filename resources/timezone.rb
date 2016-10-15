@@ -6,10 +6,18 @@ property :timezone,
   default: lazy { |r| r.node[:common_linux][:timezone] || "Etc/UTC" },
   required: true
 
-# Ensure that the resource is applied regardless of whether we are in why_run
-# or standard mode.
-#
-# Refer to chef/chef#4537 for this uncommon syntax
+property :compile_time,
+  kind_of: [TrueClass, FalseClass],
+  identity: false,
+  default: true
+
+def after_created
+  if compile_time
+    self.run_action(:set)
+    self.action :nothing
+  end
+end
+
 action_class do
   def whyrun_supported?
     true
