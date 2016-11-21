@@ -1,3 +1,3 @@
 
-include_recipe "rsyslog_ng::default"
+include_recipe 'rsyslog_ng::default'
 

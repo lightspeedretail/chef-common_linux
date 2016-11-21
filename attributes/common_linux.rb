@@ -1,8 +1,8 @@
 
 default[:common_linux].tap do |config|
-  config[:timezone]   = "Etc/UTC"
+  config[:timezone]   = 'Etc/UTC'
   config[:hostname]   = node.name
-  config[:domainname] = "localdomain"
+  config[:domainname] = 'localdomain'
 
   # Ubuntu PPAs / Yum repositories
   #

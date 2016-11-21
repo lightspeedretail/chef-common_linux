@@ -1,8 +1,8 @@
 
 # Load APT and Ubuntu recipes
 #
-include_recipe "apt::default"
-include_recipe "ubuntu::default"
+include_recipe 'apt::default'
+include_recipe 'ubuntu::default'
 
 # Load PPAs from attributes
 #

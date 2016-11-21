@@ -1,5 +1,5 @@
-name "common_linux"
-run_list "common_linux::default"
+name 'common_linux'
+run_list 'common_linux::default'
 
 default_source :supermarket
 
@@ -13,18 +13,19 @@ default[:ntp][:servers] = %w(
 )
 
 default[:common][:packages].tap do |config|
-  config["awscli"] = true
-  config["ec2-api-tools"] = true
-  config["git-core"] = true
-  config["python-setuptools"] = true
-  config["python-virtualenv"] = true
-  config["python-pip"]        = true
-  config["python-docutils"]   = true
-  config["ruby"] = true
-  config["ruby1.9.1-dev"] = true
+  config['awscli'] = true
+  config['ec2-api-tools'] = true
+  config['git-core'] = true
+  config['python-setuptools'] = true
+  config['python-virtualenv'] = true
+  config['python-pip']        = true
+  config['python-docutils']   = true
+  config['ruby'] = true
+  config['ruby1.9.1-dev'] = true
 end
 
 # Cookbooks
 #
-cookbook "common_linux", path: "."
-cookbook "rsyslog_ng", path: "../rsyslog_ng"
+cookbook 'common_linux', path: '.'
+cookbook 'rsyslog_ng',
+  git: 'git@github.com:JonathanSerafini/chef-rsyslog_ng.git'

@@ -3,7 +3,7 @@ resource_name :common_timezone
 
 property :timezone,
   kind_of: String,
-  default: lazy { |r| r.node[:common_linux][:timezone] || "Etc/UTC" },
+  default: lazy { |r| r.node[:common_linux][:timezone] || 'Etc/UTC' },
   required: true
 
 property :compile_time,
@@ -25,18 +25,18 @@ action_class do
 end
 
 action :set do
-  template "/etc/timezone" do
+  template '/etc/timezone' do
     variables timezone: timezone
-    notifies :run, "execute[reload timezone]"
-    notifies :restart, "service[cron]"
+    notifies :run, 'execute[reload timezone]'
+    notifies :restart, 'service[cron]'
   end
 
-  execute "reload timezone" do
-    command "/usr/sbin/dpkg-reconfigure -f noninteractive tzdata"
+  execute 'reload timezone' do
+    command '/usr/sbin/dpkg-reconfigure -f noninteractive tzdata'
     action :nothing
   end
 
-  service "cron" do
+  service 'cron' do
     action :nothing
   end
 end
