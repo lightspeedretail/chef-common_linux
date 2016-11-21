@@ -1,6 +1,10 @@
 common\_linux
 ==============
 
+v0.3.2
+------
+* Noop change investigating corrupt archive
+
 v0.3.1
 ------
 * DO-2210 Fix logrotate config to apply settings from attributes file present in this cookbook
