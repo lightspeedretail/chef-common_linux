@@ -7,7 +7,7 @@ license 'apachev2'
 description 'Installs/Configures chef_common_linux'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 chef_version '>= 12.7'
-version '0.3.0'
+version '0.3.1'
 
 depends 'chef-client'
 depends 'apt'
@@ -21,3 +21,4 @@ depends 'sysctl'
 depends 'ulimit'
 depends 'iptables'
 depends 'rsyslog_ng'
+depends 'logrotate'

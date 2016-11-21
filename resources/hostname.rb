@@ -36,19 +36,19 @@ action :set do
     unique    true
   end
 
-  file "/etc/hostname" do
+  file '/etc/hostname' do
     content "#{host_name}.#{domain_name}".downcase
-    notifies :restart,  "service[hostname]", :immediately
+    notifies :restart,  'service[hostname]', :immediately
   end
 
-  ohai "reload-hostname" do
-    plugin "hostname"
+  ohai 'reload-hostname' do
+    plugin 'hostname'
     action :nothing
   end
 
-  service "hostname" do
+  service 'hostname' do
     action :nothing
-    notifies :reload,   "ohai[reload-hostname]", :immediately
+    notifies :reload,   'ohai[reload-hostname]', :immediately
   end
 end
 
