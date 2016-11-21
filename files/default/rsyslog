@@ -1,12 +1,4 @@
 /var/log/syslog
-{
-  missingok
-  notifempty
-  postrotate
-    reload rsyslog >/dev/null 2>&1 || true
-  endscript
-}
-
 /var/log/mail.info
 /var/log/mail.warn
 /var/log/mail.err
