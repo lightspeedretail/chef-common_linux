@@ -1,4 +1,12 @@
-/var/log/syslog
+/var/log/lastlog
+{
+  su root utmp
+  rotate 1
+  daily
+  missingok
+  create 0664 root utmp
+}
+
 /var/log/mail.info
 /var/log/mail.warn
 /var/log/mail.err
@@ -9,10 +17,11 @@
 /var/log/user.log
 /var/log/lpr.log
 /var/log/cron.log
-/var/log/rsyslog.log
 /var/log/debug
 /var/log/messages
+/var/log/syslog
 {
+  su root adm
   missingok
   notifempty
   sharedscripts
