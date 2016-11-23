@@ -1,6 +1,10 @@
 common\_linux
 ==============
 
+v0.3.3
+------
+* Bugfix issue introduced in v0.3.1 which breaks logrotate
+
 v0.3.2
 ------
 * Noop change investigating corrupt archive
