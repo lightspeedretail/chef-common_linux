@@ -27,5 +27,6 @@ end
 # Cookbooks
 #
 cookbook 'common_linux', path: '.'
-cookbook 'rsyslog_ng',
-  git: 'git@github.com:JonathanSerafini/chef-rsyslog_ng.git'
+cookbook 'windows', '~ 3.4.1'
+cookbook 'line', '< 2.0.0'
+cookbook 'seven_zip', '< 3.0.0'
