@@ -1,6 +1,10 @@
 common\_linux
 ==============
 
+v1.0.0
+------
+* Removed rsyslog
+
 v0.3.3
 ------
 * Bugfix issue introduced in v0.3.1 which breaks logrotate
