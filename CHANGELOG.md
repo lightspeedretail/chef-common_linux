@@ -1,6 +1,10 @@
 common\_linux
 ==============
 
+v0.4.0
+------
+* Version lock ubuntu cookbook to 2.0.1
+
 v0.3.3
 ------
 * Bugfix issue introduced in v0.3.1 which breaks logrotate
@@ -26,4 +30,3 @@ v0.2.3
 v0.2.0
 ------
 * Initial
-
