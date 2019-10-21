@@ -13,4 +13,3 @@ include_recipe "#{cookbook_name}::packages"
 include_recipe "#{cookbook_name}::linux"
 include_recipe "#{cookbook_name}::iptables"
 include_recipe "#{cookbook_name}::syslog"
-

@@ -11,4 +11,3 @@ node[:common_linux][:repositories].each do |name, hash|
     common_properties hash
   end
 end
-

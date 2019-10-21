@@ -11,7 +11,7 @@ version '0.3.3'
 
 depends 'chef-client'
 depends 'apt'
-depends 'ubuntu'
+depends 'ubuntu', '=2.0.1'
 depends 'ohai'
 depends 'build-essential'
 depends 'cron'
