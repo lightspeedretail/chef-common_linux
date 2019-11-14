@@ -1,6 +1,10 @@
 common\_linux
 ==============
 
+v0.5.0
+------
+* Version lock git to 9.0.1 and ohai to 5.2.5
+
 v0.4.0
 ------
 * Version lock ubuntu cookbook to 2.0.1
