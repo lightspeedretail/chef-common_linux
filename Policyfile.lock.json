@@ -1,26 +1,25 @@
 {
-  "revision_id": "fa08a6008faca10c2663fe12cb71437d8729490f6bb2fd522f2e0124b50ae1eb",
+  "revision_id": "267007040bf2ce7ee25358447106e67e423e8ea602e94bfd8182716eab233b44",
   "name": "common_linux",
   "run_list": [
     "recipe[common_linux::default]"
   ],
   "cookbook_locks": {
     "common_linux": {
-      "version": "0.3.3",
-      "identifier": "346e838a6e27c138b535565844b824589d06615a",
-      "dotted_decimal_identifier": "14758210031200193.15961839382316216.39963010163034",
+      "version": "0.5.0",
+      "identifier": "b159aff32cc15247f4d6f8aa435b396c7dea6307",
+      "dotted_decimal_identifier": "49919683111731538.20253927478543195.63138131763975",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
-        "remote": "git@github.com:lightspeedretail/chef-common_linux.git",
-        "revision": "db2febb81836974f49eef604dfa42dca1887bc30",
+        "remote": null,
+        "revision": "a8428e5946be58fb44adf2b2481a18c3ce7e8910",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
           "origin/HEAD -> origin/master",
-          "origin/master",
-          "origin/v1.0.0-remove-rsyslog"
+          "origin/master"
         ]
       },
       "source_options": {
@@ -38,17 +37,6 @@
         "revision": "1c33a61af08d47f8dc062589ebb7fae2a3244905"
       }
     },
-    "chef-client": {
-      "version": "11.3.5",
-      "identifier": "83612b893786334f80b6e0d0b35d64b68820a939",
-      "dotted_decimal_identifier": "36980061562701363.22378046104318813.110735130667321",
-      "cache_key": "chef-client-11.3.5-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-client/versions/11.3.5/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-client/versions/11.3.5/download",
-        "version": "11.3.5"
-      }
-    },
     "apt": {
       "version": "7.2.0",
       "identifier": "42f46ee8ced265bcc92c3bf40c9f7ceb3c443df1",
@@ -58,28 +46,6 @@
       "source_options": {
         "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/apt/versions/7.2.0/download",
         "version": "7.2.0"
-      }
-    },
-    "ubuntu": {
-      "version": "2.0.1",
-      "identifier": "cbc5bfc784a9a65d58b60297c5ebc4a003911781",
-      "dotted_decimal_identifier": "57356847749048742.26274711584884203.216191533651841",
-      "cache_key": "ubuntu-2.0.1-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ubuntu/versions/2.0.1/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ubuntu/versions/2.0.1/download",
-        "version": "2.0.1"
-      }
-    },
-    "ohai": {
-      "version": "5.3.0",
-      "identifier": "3ad58179813321f2497a12ea4e2bbb6018a47ee3",
-      "dotted_decimal_identifier": "16560300715225889.68197733016161835.206021404688099",
-      "cache_key": "ohai-5.3.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ohai/versions/5.3.0/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ohai/versions/5.3.0/download",
-        "version": "5.3.0"
       }
     },
     "build-essential": {
@@ -93,6 +59,17 @@
         "version": "8.2.1"
       }
     },
+    "chef-client": {
+      "version": "11.4.0",
+      "identifier": "20dc5601faaef919a92e5c4b41236b9c75ceffaa",
+      "dotted_decimal_identifier": "9249461213245177.7222890999791907.118319735570346",
+      "cache_key": "chef-client-11.4.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-client/versions/11.4.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/chef-client/versions/11.4.0/download",
+        "version": "11.4.0"
+      }
+    },
     "cron": {
       "version": "6.2.2",
       "identifier": "602e43b375c9dd2dc5f4540b50f34c1fe6692ab7",
@@ -104,6 +81,17 @@
         "version": "6.2.2"
       }
     },
+    "git": {
+      "version": "9.0.1",
+      "identifier": "260cfe920ed414d5288948ca45c921d72d161358",
+      "dotted_decimal_identifier": "10710336626676756.59998740136216009.37208058106712",
+      "cache_key": "git-9.0.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/git/versions/9.0.1/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/git/versions/9.0.1/download",
+        "version": "9.0.1"
+      }
+    },
     "hostsfile": {
       "version": "3.0.1",
       "identifier": "4054324c36e266a714e89e9a3d160156a30f592d",
@@ -113,39 +101,6 @@
       "source_options": {
         "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/hostsfile/versions/3.0.1/download",
         "version": "3.0.1"
-      }
-    },
-    "ntp": {
-      "version": "3.7.0",
-      "identifier": "e78794a444524ab708cd1c50ddf5a5a3bb037e66",
-      "dotted_decimal_identifier": "65169792101012042.51519597774429685.182122635820646",
-      "cache_key": "ntp-3.7.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ntp/versions/3.7.0/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ntp/versions/3.7.0/download",
-        "version": "3.7.0"
-      }
-    },
-    "sysctl": {
-      "version": "1.0.5",
-      "identifier": "3d2a23146a32c45b9a3635a51b7814c9528f24d5",
-      "dotted_decimal_identifier": "17216303734076100.25783780499594104.22854906094805",
-      "cache_key": "sysctl-1.0.5-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/sysctl/versions/1.0.5/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/sysctl/versions/1.0.5/download",
-        "version": "1.0.5"
-      }
-    },
-    "ulimit": {
-      "version": "1.0.0",
-      "identifier": "420e6638335686373f34d55a4be723ea1c79367d",
-      "dotted_decimal_identifier": "18593180655244934.15550619869400039.39488407025277",
-      "cache_key": "ulimit-1.0.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ulimit/versions/1.0.0/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ulimit/versions/1.0.0/download",
-        "version": "1.0.0"
       }
     },
     "iptables": {
@@ -168,6 +123,61 @@
       "source_options": {
         "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/logrotate/versions/2.2.2/download",
         "version": "2.2.2"
+      }
+    },
+    "ntp": {
+      "version": "3.7.0",
+      "identifier": "e78794a444524ab708cd1c50ddf5a5a3bb037e66",
+      "dotted_decimal_identifier": "65169792101012042.51519597774429685.182122635820646",
+      "cache_key": "ntp-3.7.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ntp/versions/3.7.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ntp/versions/3.7.0/download",
+        "version": "3.7.0"
+      }
+    },
+    "ohai": {
+      "version": "5.2.5",
+      "identifier": "f393ae21b9c53af8a3ee75662fce43f3c2ce5167",
+      "dotted_decimal_identifier": "68560795440104762.69986038791417806.74714224415079",
+      "cache_key": "ohai-5.2.5-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ohai/versions/5.2.5/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ohai/versions/5.2.5/download",
+        "version": "5.2.5"
+      }
+    },
+    "sysctl": {
+      "version": "1.1.0",
+      "identifier": "c461a47cd9141c0f18d5b9640576a5fc4b029ca9",
+      "dotted_decimal_identifier": "55276454532420636.4249430868100470.182503008804009",
+      "cache_key": "sysctl-1.1.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/sysctl/versions/1.1.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/sysctl/versions/1.1.0/download",
+        "version": "1.1.0"
+      }
+    },
+    "ubuntu": {
+      "version": "2.0.1",
+      "identifier": "cbc5bfc784a9a65d58b60297c5ebc4a003911781",
+      "dotted_decimal_identifier": "57356847749048742.26274711584884203.216191533651841",
+      "cache_key": "ubuntu-2.0.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ubuntu/versions/2.0.1/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ubuntu/versions/2.0.1/download",
+        "version": "2.0.1"
+      }
+    },
+    "ulimit": {
+      "version": "1.0.0",
+      "identifier": "420e6638335686373f34d55a4be723ea1c79367d",
+      "dotted_decimal_identifier": "18593180655244934.15550619869400039.39488407025277",
+      "cache_key": "ulimit-1.0.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ulimit/versions/1.0.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ulimit/versions/1.0.0/download",
+        "version": "1.0.0"
       }
     },
     "seven_zip": {
@@ -241,44 +251,28 @@
         ">= 0.0.0"
       ],
       [
-        "chef-client",
-        "= 11.3.5"
-      ],
-      [
         "apt",
         "= 7.2.0"
-      ],
-      [
-        "ubuntu",
-        "= 2.0.1"
-      ],
-      [
-        "ohai",
-        "= 5.3.0"
       ],
       [
         "build-essential",
         "= 8.2.1"
       ],
       [
+        "chef-client",
+        "= 11.4.0"
+      ],
+      [
         "cron",
         "= 6.2.2"
       ],
       [
+        "git",
+        "= 9.0.1"
+      ],
+      [
         "hostsfile",
         "= 3.0.1"
-      ],
-      [
-        "ntp",
-        "= 3.7.0"
-      ],
-      [
-        "sysctl",
-        "= 1.0.5"
-      ],
-      [
-        "ulimit",
-        "= 1.0.0"
       ],
       [
         "iptables",
@@ -287,6 +281,26 @@
       [
         "logrotate",
         "= 2.2.2"
+      ],
+      [
+        "ntp",
+        "= 3.7.0"
+      ],
+      [
+        "ohai",
+        "= 5.2.5"
+      ],
+      [
+        "sysctl",
+        "= 1.1.0"
+      ],
+      [
+        "ubuntu",
+        "= 2.0.1"
+      ],
+      [
+        "ulimit",
+        "= 1.0.0"
       ],
       [
         "seven_zip",
@@ -302,21 +316,9 @@
       ]
     ],
     "dependencies": {
-      "common_linux (0.3.3)": [
-        [
-          "chef-client",
-          ">= 0.0.0"
-        ],
+      "common_linux (0.5.0)": [
         [
           "apt",
-          ">= 0.0.0"
-        ],
-        [
-          "ubuntu",
-          "= 2.0.1"
-        ],
-        [
-          "ohai",
           ">= 0.0.0"
         ],
         [
@@ -324,23 +326,19 @@
           ">= 0.0.0"
         ],
         [
+          "chef-client",
+          ">= 0.0.0"
+        ],
+        [
           "cron",
           ">= 0.0.0"
         ],
         [
+          "git",
+          "= 9.0.1"
+        ],
+        [
           "hostsfile",
-          ">= 0.0.0"
-        ],
-        [
-          "ntp",
-          ">= 0.0.0"
-        ],
-        [
-          "sysctl",
-          ">= 0.0.0"
-        ],
-        [
-          "ulimit",
           ">= 0.0.0"
         ],
         [
@@ -348,11 +346,31 @@
           ">= 0.0.0"
         ],
         [
+          "logrotate",
+          ">= 0.0.0"
+        ],
+        [
+          "ntp",
+          ">= 0.0.0"
+        ],
+        [
+          "ohai",
+          "< 5.3.0"
+        ],
+        [
           "rsyslog_ng",
           ">= 0.0.0"
         ],
         [
-          "logrotate",
+          "sysctl",
+          ">= 0.0.0"
+        ],
+        [
+          "ubuntu",
+          "= 2.0.1"
+        ],
+        [
+          "ulimit",
           ">= 0.0.0"
         ]
       ],
@@ -362,26 +380,7 @@
           ">= 0.0.0"
         ]
       ],
-      "chef-client (11.3.5)": [
-        [
-          "cron",
-          ">= 4.2.0"
-        ],
-        [
-          "logrotate",
-          ">= 1.9.0"
-        ]
-      ],
       "apt (7.2.0)": [
-
-      ],
-      "ubuntu (2.0.1)": [
-        [
-          "apt",
-          ">= 0.0.0"
-        ]
-      ],
-      "ohai (5.3.0)": [
 
       ],
       "build-essential (8.2.1)": [
@@ -394,28 +393,53 @@
           ">= 1.1.0"
         ]
       ],
+      "chef-client (11.4.0)": [
+        [
+          "cron",
+          ">= 4.2.0"
+        ],
+        [
+          "logrotate",
+          ">= 1.9.0"
+        ]
+      ],
       "cron (6.2.2)": [
 
       ],
-      "hostsfile (3.0.1)": [
-
-      ],
-      "ntp (3.7.0)": [
-
-      ],
-      "sysctl (1.0.5)": [
+      "git (9.0.1)": [
         [
-          "ohai",
+          "build-essential",
           ">= 5.0.0"
         ]
       ],
-      "ulimit (1.0.0)": [
+      "hostsfile (3.0.1)": [
 
       ],
       "iptables (4.5.0)": [
 
       ],
       "logrotate (2.2.2)": [
+
+      ],
+      "ntp (3.7.0)": [
+
+      ],
+      "ohai (5.2.5)": [
+
+      ],
+      "sysctl (1.1.0)": [
+        [
+          "ohai",
+          ">= 5.0.0"
+        ]
+      ],
+      "ubuntu (2.0.1)": [
+        [
+          "apt",
+          ">= 0.0.0"
+        ]
+      ],
+      "ulimit (1.0.0)": [
 
       ],
       "seven_zip (3.1.2)": [
