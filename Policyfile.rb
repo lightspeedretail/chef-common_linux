@@ -18,7 +18,6 @@ default[:common][:packages].tap do |config|
   config['git-core'] = true
   config['python-setuptools'] = true
   config['python-virtualenv'] = true
-  config['python-pip']        = true
   config['python-docutils']   = true
   config['ruby'] = true
   config['ruby1.9.1-dev'] = true
