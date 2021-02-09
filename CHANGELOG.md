@@ -1,6 +1,10 @@
 common\_linux
 ==============
 
+v0.6.0
+------
+* Fixed python-pip installation
+
 v0.5.0
 ------
 * Version lock git to 9.0.1 and ohai to 5.2.5
